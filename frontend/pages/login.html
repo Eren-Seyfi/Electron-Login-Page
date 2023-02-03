@@ -1,0 +1,99 @@
+<head>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+
+  <title>Login</title>
+  <link rel="stylesheet" href="../assets/css/login.css" />
+</head>
+
+<body class="d-flex" style="background-color: #d3d3d3">
+  <!-- ================= Giriş ekranı ================= -->
+  <div
+    class="d-flex flex-column justify-content-center text-center align-items-center"
+    style="height: 100vh"
+    id="LoginRequest"
+  >
+    <img
+      class="mb-4 rounded-circle"
+      src="../assets/images/Default-icon.png"
+      height="96"
+    />
+    <h1 class="h3 mb-3 fw-normal">Lütfen giriş yapın</h1>
+
+    <div>
+      <div class="form-floating">
+        <input
+          type="text"
+          class="form-control"
+          id="floatingInput"
+          placeholder="Username"
+          name="Username"
+        />
+        <label for="floatingInput">Username</label>
+      </div>
+      <div class="form-floating">
+        <input
+          type="password"
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+          name="Password"
+        />
+        <label for="floatingPassword">Password</label>
+      </div>
+    </div>
+
+    <div class="checkbox my-1">
+      <label>
+        <input type="checkbox" value="remember-me" id="remember-me" /> Beni
+        Hatırla
+      </label>
+    </div>
+    <button
+      type="submit"
+      class="btn btn-primary btn-lg"
+      id="LoginBtn"
+      data-bs-toggle="modal"
+      data-bs-target="#staticBackdrop"
+    >
+      Giriş yap
+    </button>
+    <p class="mt-3 text-muted">© 2023</p>
+  </div>
+
+  <!-- ================= Hesap ekranı ================= -->
+
+  <div
+    id="account"
+    class="d-flex justify-content-center align-items-center bg-dark text-white-50 w-50 round"
+    style="height: 100vh"
+  ></div>
+
+  <!-- ================= Açılır ekran ================= -->
+  <div
+    class="modal fade"
+    id="staticBackdrop"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body" id="alert-control">
+          <div id="alert-control text-center"></div>
+        </div>
+        <div style="visibility: hidden">
+          <button type="button" data-bs-dismiss="modal" id="alert-close">
+            Kapat
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/login.js"></script>
+</body>
