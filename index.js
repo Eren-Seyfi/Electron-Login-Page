@@ -10,7 +10,7 @@ defaultUser = [
     remember: true,
     Username: "Eren",
     Password: 1234,
-    Avatar: "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp",
+    Avatar: "https://raw.githubusercontent.com/Eren-Seyfi/Electron-Login-Page/main/pp.jpg",
   },
 ];
 
